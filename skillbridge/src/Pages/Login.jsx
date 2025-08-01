@@ -36,7 +36,11 @@ const Login = () => {
 
         <button type="submit">Login</button>
         <p className="register-link">
-          Don't have an account? <a href="#">Sign up</a>
+          Don't have an account? <a href="#">Sign up </a>
+        </p>
+
+        <p className="Admin-link">
+          <a href="#">Login As Admin </a>
         </p>
       </form>
     </div>
