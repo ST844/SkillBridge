@@ -5,6 +5,7 @@ import SignUp from './Pages/SignUp';
 import AdminDashboard from './Pages/DashBoard';
 import HomePage from './Pages/Home';
 import Navbar from './Pages/Navbar';
+import AdminLogin from './Pages/AdminLogin';
  // ✅ Add this line
 // import HomePage from './Pages/Home';
 // import Navbar from './Pages/Navbar';
@@ -18,6 +19,7 @@ function App() {
       <HomePage /> 
       <Login />
       <SignUp />
+      <AdminLogin/>
       <AdminDashboard /> 
     </>
   );
