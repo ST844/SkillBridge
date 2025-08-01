@@ -1,0 +1,143 @@
+:root {
+  --light-green: #d4f8d4;
+  --medium-green: #a6e3a6;
+  --dark-green: #247f24;
+  --hover-green: #1c661c;
+}
+
+/* Layout */
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f7fdf7;
+}
+
+/* Sidebar */
+.admin-sidebar {
+  width: 250px;
+  background-color: var(--medium-green);
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.admin-sidebar h2 {
+  color: var(--dark-green);
+  margin-bottom: 20px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin-bottom: 12px;
+}
+
+.admin-sidebar a {
+  color: var(--dark-green);
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.admin-sidebar a:hover {
+  background-color: #c3ebc3;
+}
+
+/* Main Content */
+.admin-main {
+  flex: 1;
+  padding: 40px;
+}
+
+.admin-main h1 {
+  color: var(--dark-green);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Widgets */
+.admin-widgets {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.widget-card {
+  flex: 1 1 200px;
+  background-color: white;
+  padding: 20px;
+  border-left: 5px solid var(--dark-green);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.widget-card h3 {
+  color: var(--dark-green);
+  margin-bottom: 8px;
+}
+
+.widget-card p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Recent Activity Table */
+.admin-section {
+  margin-top: 40px;
+}
+
+.admin-section h2 {
+  margin-bottom: 16px;
+  color: var(--dark-green);
+}
+
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.activity-table th,
+.activity-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.activity-table th {
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  font-weight: 600;
+}
+
+.activity-table tr:hover {
+  background-color: #f0fff0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+  }
+
+  .admin-widgets {
+    flex-direction: column;
+  }
+}

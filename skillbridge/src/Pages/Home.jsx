@@ -5,56 +5,91 @@ const HomePage = () => {
   return (
     <div className="homepage">
       {/* Hero Section */}
-      <section className="hero">
-        <h1>Welcome to SkillBridge</h1>
-        <p>Bridge the gap between talent and opportunity.</p>
-        <button className="cta-btn">Get Started</button>
-      </section>
+      <section className="hero no-image">
+        <div className="hero-content">
+          <h1>
+            Up Your <span className="highlight">Skills</span> To{' '}
+            <span className="highlight">Advance</span> Your{' '}
+            <span className="highlight">Career</span> Path
+          </h1>
+          <p className="subtext">
+            Exchange expertise through verified 1-to-1 swaps. The modern way to learn and teach - no money, just knowledge.
+          </p>
+          <button className="cta-btn">Get Started</button>
 
-      {/* Features Section */}
-      <section className="features" id="features">
-        <h2 className="section-title">Why Choose SkillBridge?</h2>
-        <div className="feature-list">
-          <div className="feature-card">
-            <h3>✅ Verified Professionals</h3>
-            <p>Work with only trusted and vetted experts in their field.</p>
+          <div className="tags">
+            <span>🔊 Public Speaking</span>
+            <span>💼 Career-Oriented</span>
+            <span>💡 Creative Thinking</span>
           </div>
-          <div className="feature-card">
-            <h3>⚡ Fast Hiring Process</h3>
-            <p>Get matched with top talent in under 24 hours.</p>
+
+          <div className="stats">
+            <div className="stat-box">
+              <h3>5K+</h3>
+              <p>Online Courses</p>
+            </div>
+            <div className="stat-box">
+              <h3>2K+</h3>
+              <p>Video Courses</p>
+            </div>
+            <div className="stat-box">
+              <h3>250+</h3>
+              <p>Tutors</p>
+            </div>
           </div>
-          <div className="feature-card">
-            <h3>🔒 Secure Payments</h3>
-            <p>Payments are protected until the job is completed and approved.</p>
-          </div>
-          <div className="feature-card">
-            <h3>🌍 Global Talent</h3>
-            <p>Access a diverse pool of professionals from around the world.</p>
+
+          <div className="partners">
+            <div>
+              <strong>250+</strong> Collaboration
+            </div>
+            <img src="/logos/duolingo.png" alt="duolingo" />
+            <img src="/logos/codecov.png" alt="codecov" />
+            <img src="/logos/usertesting.png" alt="user testing" />
+            <img src="/logos/magicleap.png" alt="magic leap" />
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="testimonials" id="testimonials">
-        <h2 className="section-title">What Our Clients Say</h2>
+      {/* Testimonials */}
+      <section className="testimonials">
+        <h2>What Our Clients Say</h2>
         <div className="testimonial-list">
-          <div className="testimonial-card">
-            <p>"SkillBridge helped us find skilled developers within hours. Saved us weeks!"</p>
-            <span>- Alex Morgan, Startup Founder</span>
+          <div className="testimonial">
+            <p>"SkillBridge helped me find amazing talent in just hours!"</p>
+            <span>- Alex, Startup Founder</span>
           </div>
-          <div className="testimonial-card">
-            <p>"Smooth hiring, trustworthy talent, and secure payments. Highly recommended."</p>
-            <span>- Priya Sharma, HR Lead</span>
+          <div className="testimonial">
+            <p>"A seamless experience from hiring to payment."</p>
+            <span>- Priya, HR Manager</span>
           </div>
-          <div className="testimonial-card">
-            <p>"I've tried other platforms — SkillBridge is by far the fastest and most reliable."</p>
-            <span>- Daniel Wu, Project Manager</span>
+          <div className="testimonial">
+            <p>"The best platform for career-focused learners."</p>
+            <span>- Jordan, Mentor</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Section */}
+      <section className="blog">
+        <h2>Latest From Our Blog</h2>
+        <div className="blog-posts">
+          <div className="post">
+            <h3>5 Ways to Learn Faster</h3>
+            <p>Discover proven techniques to boost your learning curve effectively.</p>
+          </div>
+          <div className="post">
+            <h3>Career Trends in 2025</h3>
+            <p>Get ahead by knowing which skills are in demand for the future.</p>
+          </div>
+          <div className="post">
+            <h3>How to Teach What You Know</h3>
+            <p>Tips to become a top-rated tutor and share your knowledge smartly.</p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="footer" id="footer">
+      <footer className="footer">
         <p>&copy; {new Date().getFullYear()} SkillBridge. All rights reserved.</p>
       </footer>
     </div>
